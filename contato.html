@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+     <!--meta dados-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="html, comentários, listas, layout">
+    <!--fim metadados-->
+    <title>Aulas Desenvolvimento Web I</title>
+    <link rel="stylesheet" type="text/css" href="/CSS/estilo.css" />
+</head>
+<body>
+    <header>
+        <a href="index.html" title="Ir para página inicial"><img src="/imagem/imagem/FATEC_ZONA_LESTE.png" alt="Logo Fatec Zona Leste nas cores cinza e vermelho"></a>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="comentarios.html">Comentários</a></li>
+            <li><a href="metadados.html">Metadados</a></li>
+            <li><a href="javascript:void(0)">Listas</a>
+                <ul>
+                    <li><a href="ol.html">Lista Ordenada</a></li>
+                    <li><a href="ul.html">Lista Não Ordenada</a></li>
+                </ul>
+            </li>
+            <li><a href="layout.html">Layout</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>FALE CONOSCO</h1>
+        <form action="" method="post" name="contato" id="contato">
+            <fieldset>
+                <legend>Dados pessoais</legend>
+
+                <label for="nome"  class="required">Nome</label><br>
+                <input type="text" name="nome" id="nome" placeholder="Nome completo" required><br>
+
+                <label for="cpf"  class="required">CPF</label><br>
+                <input type="text" name="cpf" id="cpf" placeholder="999.999.999-99" required><br>
+
+                <label for="data"  class="required">Data de Nascimento</label><br>
+                <input type="date" name="data" id="data" required><br>
+
+                <label for="telefone">Telefone</label><br>
+                <input type="tel" name="telefone" id="telefone" placeholder="(99) 99999-9999"><br>
+
+                <label for="email"  class="required">E-mail</label><br>
+                <input type="email" name="email" id="email" placeholder="nome@site.com.br" required><br>
+
+               
+            </fieldset>
+            
+            <fieldset>
+                <legend>Endereço</legend>
+                    <label for="cep"  class="required">CEP</label><br>
+                    <input type="text" name="cep" id="cep" placeholder="99999-999" required><br>
+
+                    <label for="rua">Rua</label><br>
+                    <input type="text" name="rua" id="rua"><br>
+
+                    <label for="numero">Número</label><br>
+                    <input type="number" name="numero" id="numero"><br>
+
+                    <label for="complemento">Complemento</label><br>
+                    <input type="text" name="completo" id="complemento" placeholder="Apartamento, Bloco, Casa, etc."><br>
+
+                    <label for="bairro">Bairro</label><br>
+                    <input type="text" name="bairro" id="bairro"><br>
+
+                    <label for="cidade">Cidade</label><br>
+                    <input type="text" name="cidade" id="cidade"><br>
+
+                    <label for="estado">Estado</label><br>
+                    <input type="text" name="estado" id="estado"><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Dados da mensagem</legend>
+                    <label for="curso" class="required">Curso</label><br>
+                    <select name="curso" id="curso"  required>
+                        <option value="select" selected disabled>Selecione um curso</option>
+                        <option value="ads">Análise de Desenvolvido de Sistemas</option>
+                        <option value="comex">Comércio Exterior</option>
+                        <option value="dpp">Desenvolvido de Produtos Plásticos</option>
+                        <option value="dsm">Desenvolvido de Software Multiplataforma</option>
+                        <option value="gestaoemp">Gestão Empresarial</option>
+                        <option value="gestaorh">Gestão de Recursos Humanos</option>
+                        <option value="logistica">Logística</option>
+                        <option value="polimero">Polímeros</option>
+                    </select><br>
+
+                    <label for="assunto"  class="required" >Assunto</label><br>
+                    <select name="assunto" id="assunto"required>
+                        <option value="select" selected disabled>Selecione assunto</option>
+                        <option value="elogio">Elogio</option>
+                        <option value="sugestao">Sugestão</option>
+                        <option value="reclamação">Reclamação</option>
+                        <option value="outro">Outro</option>
+                    </select><br>
+
+                    <label for="mensagem" class="required">Mensagem</label><br>
+                    <textarea name="mensagem" id="mensagem" cols="40" rows="10"></textarea>
+            </fieldset>
+
+            <button type="submit">Enviar</button> <button type="reset">Limpar</button>
+        </form>
+    </main>
+    <footer>
+        <p>Desenvolvido por Andrea Felipe<br> Todos os direitos reservados &copy;2022</p>
+
+    </footer>
+</body>
+</html>

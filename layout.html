@@ -8,12 +8,13 @@
     <meta name="keywords" content="html, comentários, listas, layout">
     <!--fim metadados-->
     <title>Aulas Desenvolvimento Web I</title>
+    <link rel="stylesheet" type="text/css" href="/CSS/estilo.css" />
 </head>
 <body>
-    <header>
+    <header class="flex-container" id="topo"><!--Topo-->
         <a href="index.html" title="Ir para página inicial"><img src="/imagem/imagem/FATEC_ZONA_LESTE.png" alt="Logo Fatec Zona Leste nas cores cinza e vermelho"></a>
     </header>
-    <nav>
+    <nav class="flex-container"><!--Navegação-->
         <ul>
             <li><a href="index.html">Início</a></li>
             <li><a href="comentarios.html">Comentários</a></li>
@@ -25,14 +26,20 @@
                 </ul>
             </li>
             <li><a href="layout.html">Layout</a></li>
+            <li><a href="contato.html">Fale Conosco</a></li>
         </ul>
     </nav>
-    <main>
+    <main class="flex-container" id="conteudo"><!--Conteúdo-->
         <h1>Layout</h1>
-        <p>Um elemento semântico descreve claramente seu significado para o navegador e o desenvolvedor.</p>
+        <p>&lt;header&gt; - define um cabeçalho para um documento ou seção</p>
+        <p>&lt;nav&gt; - Define um contêiner para links de navegação</p>
+        <p>&lt;section&gt; - Define uma seção em um documento</p>
+        <p>&lt;article&gt; - Define um artigo independente</p>
+        <p>&lt;aside&gt; - Define o conteúdo além do conteúdo (como uma barra lateral)</p>
+        <p>&lt;footer&gt; - define um rodapé para um documento ou seção</p>
         <img src="/imagem/imagem/layout.png" alt="Imagem contendo instruções HTML para layout">
     </main>
-    <footer>
+    <footer class="flex-container" id="rodape"><!--rodapé-->
         <p>Desenvolvido por Andrea Felipe<br> Todos os direitos reservados &copy;2022</p>
     </footer>
 </body>

@@ -8,12 +8,13 @@
     <meta name="keywords" content="html, comentários, listas, layout">
     <!--fim metadados-->
     <title>Aulas Desenvolvimento Web I</title>
+    <link rel="stylesheet" type="text/css" href="/CSS/estilo.css" />
 </head>
 <body>
-    <header>
+    <header class="flex-container" id="topo"><!--Topo-->
         <a href="index.html" title="Ir para página inicial"><img src="/imagem/imagem/FATEC_ZONA_LESTE.png" alt="Logo Fatec Zona Leste nas cores cinza e vermelho"></a>
     </header>
-    <nav>
+    <nav class="flex-container"><!--Navegação-->
         <ul>
             <li><a href="index.html">Início</a></li>
             <li><a href="comentarios.html">Comentários</a></li>
@@ -25,9 +26,10 @@
                 </ul>
             </li>
             <li><a href="layout.html">Layout</a></li>
+            <li><a href="contato.html">Fale Conosco</a></li>
         </ul>
     </nav>
-    <main>
+    <main class="flex-container" id="conteudo"><!--Conteúdo-->
         <h1>Aulas de Desenvolvimento Web I</h1>
         <h2>Conteúdos</h2>
             <ol>
@@ -37,7 +39,7 @@
                 <li>Layout</li>
             </ol>
     </main>
-    <footer>
+    <footer class="flex-container" id="rodape"><!--rodapé-->
         <p>Desenvolvido por Andrea Felipe<br> Todos os direitos reservados &copy;2022</p>
 
     </footer>
