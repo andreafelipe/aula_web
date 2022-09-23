@@ -11,11 +11,11 @@
     <link rel="stylesheet" type="text/css" href="/CSS/estilo.css" />
 </head>
 <body>
-    <header>
+    <header class="flex-container" id="topo"><!--Topo-->
         <a href="index.html" title="Ir para página inicial"><img src="/imagem/imagem/FATEC_ZONA_LESTE.png" alt="Logo Fatec Zona Leste nas cores cinza e vermelho"></a>
     </header>
-    <nav>
-        <ul>
+    <nav class="flex-container"><!--Navegação-->
+        <ul class="menu">
             <li><a href="index.html">Início</a></li>
             <li><a href="comentarios.html">Comentários</a></li>
             <li><a href="metadados.html">Metadados</a></li>
@@ -26,10 +26,11 @@
                 </ul>
             </li>
             <li><a href="layout.html">Layout</a></li>
+            <li><a href="contato.html">Fale Conosco</a></li>
         </ul>
     </nav>
-    <main>
-        <h1>FALE CONOSCO</h1>
+    <main class="flex-container" id="conteudo"><!--Conteúdo-->
+        <h1>Fale Conosco</h1>
         <form action="" method="post" name="contato" id="contato">
             <fieldset>
                 <legend>Dados pessoais</legend>
@@ -104,10 +105,11 @@
                     <textarea name="mensagem" id="mensagem" cols="40" rows="10"></textarea>
             </fieldset>
 
-            <button type="submit">Enviar</button> <button type="reset">Limpar</button>
+            <button type="submit">Enviar</button>
+            <button type="reset">Limpar</button>
         </form>
     </main>
-    <footer>
+    <footer class="flex-container" id="rodape"><!--rodapé-->
         <p>Desenvolvido por Andrea Felipe<br> Todos os direitos reservados &copy;2022</p>
 
     </footer>
