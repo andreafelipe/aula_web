@@ -22,8 +22,8 @@
             <li><a href="acessibilidade.html">Acessibilidade</a></li>
             <li><a href="javascript.void(0);" id="contraste">Contraste</a></li>
             <li><a href="javascript.void(0);" id="semcontraste">Sem contraste</a></li>
-            <li><a href="javascript.void(0);" id="aumenta"></a>A+</li>
-            <li><a href="javascript.void(0);" id="diminui"></a>A-</li>
+            <li><a href="javascript.void(0);" id="aumenta">A+</a></li>
+            <li><a href="javascript.void(0);" id="diminui"><A-></A-></a></li>
         </ul>
     </div>
     <header class="flex-container" id="topo"><!--Topo-->
@@ -40,6 +40,8 @@
           </script>
     </header>
     <nav class="flex-container"><!--Navegação-->
+        <label for="bt_menu"><img src="imagem/menu.png" alt="menu"></label>
+            <input type="checkbox" name="bt_menu" id="bt_menu">
         <label for="bt_menu"><img src="imagem/menu.png" alt="menu"></label>
         <input type="checkbox" name="bt_menu" id="bt_menu">
         <ul class="menu" id="menu">
@@ -58,7 +60,13 @@
         </ul>
     </nav>
     <main class="flex-container" id="conteudo"><!--Conteúdo-->
-        <h1>ACESSIBILIDADE</h1><p>Este site foi desenvolvido para que pessoas com deficiência visual, baixa visão, daltonismo, deficiência auditiva e mobilidade reduzida possam navegar por meio de recursos como alto contraste, aumento de fonte, teclas de atalho, tradução para a Língua Brasileira de Sinais e navegação por teclado.</p>
+        <ul class="breadcrumb">
+            <li><a href="index.html">Início</a></li>
+            <li>Acessibilidade</li>
+        </ul>
+        <section>
+            <h1>ACESSIBILIDADE</h1>
+            <p>Este site foi desenvolvido para que pessoas com deficiência visual, baixa visão, daltonismo, deficiência auditiva e mobilidade reduzida possam navegar por meio de recursos como alto contraste, aumento de fonte, teclas de atalho, tradução para a Língua Brasileira de Sinais e navegação por teclado.</p>
     
             <p>Para aumentar a fonte, é só clicar no símbolo de A+ em nossa barra de acessibilidade. Caso queira voltar ao tamanho de fonte original, é só clicar em A-.</p>
     
@@ -92,13 +100,14 @@
             <p>- Virtual Vision: leitor de telas em português do Brasil;</p>
             <p>- DOSVOX: sistema para deficientes visuais (Windows ou Linux).</p>
             <p>- Talckback: leitor de tela disponível em smartphones Android.</p>
-        <p>Observação: leia no manual do leitor de telas sobre a melhor forma de navegação em páginas web.</p><br>
+            <p>Observação: leia no manual do leitor de telas sobre a melhor forma de navegação em páginas web.</p><br>
             
             <p>LIBRAS - Língua Brasileira de Sinais</p>
             <p>Este site é acessível em LIBRAS através do <a href="http://www.vlibras.gov.br/" target="_blank">VLibras</a>.</p>
             <p>-Do lado direito de cada página do site existe o ícone de um Widget informando que o site é acessível em LIBRAS.</p>
             <p>-Para traduzir, basta clicar sobre o ícone e selecionar o texto que deseja traduzir.</p>
-        </main>
+        
+        </section>
     </main>
     <footer class="flex-container" id="rodape"><!--rodapé-->
         <p>Desenvolvido por Andrea Felipe<br> Todos os direitos reservados &copy;2022</p>

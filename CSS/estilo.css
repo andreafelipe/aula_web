@@ -94,27 +94,54 @@ nav{
 
 .menu li ul li{
     display: block;
-    width: 170px;
+    width: 140px;
 }
+
+/*ocultar menu hamburguer*/
+
+label[for="bt_menu"], #bt_menu{
+    display: none;
+}
+
 /* conteúdo */
 #conteudo{
-    min-height: 700px;
+    min-height: 800px;
     flex-direction: column;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.5em;
 
 }
 
-#conteudo h1{
+.breadcrumb{
+    padding-left: 2%;
+    list-style: none;
+}
+.breadcrumb li{
+    display: inline;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8em;
+    color: #000;
+}
+.breadcrumb li a{
+    color: #555;
+}
+.breadcrumb li a:hover{
+    color: #000;
+}
+.breadcrumb li+li::before{
+    content: "/\00a0";
+    padding: 6px;
+    color: #000;
+}
+
+h1{
     text-align: center;
-    padding-top: 2%;
 }
 
-#conteudo p, ol, h2, img{
-    padding: 2%  5%;
-
-
+section{
+    padding: 2%  10%;
 }
+
 /* Formulário */
 form{
     align-self: center;
@@ -127,7 +154,7 @@ label, legend{
 input, select, textarea{
     padding: 10px;
     border-radius: 15px;
-    width: 100%;
+    width: 80%;
     
 }
 
@@ -137,19 +164,14 @@ textarea{
 }
 
 fieldset{
-    width: 100%;
+    width: 70%;
     border: none;
-    padding: 40px;
-    margin: auto;
-    
+    margin: auto;   
 }
 
-
-
 button {
-    width: 45%;
+    width: 35%;
     padding: 10px;
-    margin: auto;
 }
 
 .required::after{
