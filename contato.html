@@ -95,7 +95,7 @@
                     <input type="text" name="cep" id="cep" placeholder="99999-999" required><br>
 
                     <label for="rua">Rua</label><br>
-                    <input type="text" name="rua" id="rua"><br>
+                    <input type="text" name="rua" id="rua" disabled><br>
 
                     <label for="numero">Número</label><br>
                     <input type="number" name="numero" id="numero"><br>
@@ -104,13 +104,13 @@
                     <input type="text" name="completo" id="complemento" placeholder="Apartamento, Bloco, Casa, etc."><br>
 
                     <label for="bairro">Bairro</label><br>
-                    <input type="text" name="bairro" id="bairro"><br>
+                    <input type="text" name="bairro" id="bairro" disabled><br>
 
                     <label for="cidade">Cidade</label><br>
-                    <input type="text" name="cidade" id="cidade"><br>
+                    <input type="text" name="cidade" id="cidade" disabled><br>
 
-                    <label for="estado">Estado</label><br>
-                    <input type="text" name="estado" id="estado"><br>
+                    <label for="uf">Estado</label><br>
+                    <input type="text" name="uf" id="uf" disabled><br>
             </fieldset>
 
             <fieldset>
@@ -150,5 +150,10 @@
         <p>Desenvolvido por Andrea Felipe<br> Todos os direitos reservados &copy;2022</p>
 
     </footer>
+
+<script src="/javascript/masks.js"></script>
+<script src="/javascript/cep.js"></script>
+<script src="/javascript/fonte.js"></script>
+<script src="/javascript/contraste.js"></script>
 </body>
 </html>
